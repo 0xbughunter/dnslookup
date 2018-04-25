@@ -28,7 +28,7 @@ class dnslookup:
                 print "{0} record doesn't exists".format(q)
                 print "\n"
 
-    def reverse_lkp(self):
+    def reverse_lookup(self):
         for adr in self.address:
             print "reverse iplookup data for {0}".format(adr)
             print "==========================================="
@@ -57,4 +57,4 @@ if __name__ == '__main__':
     hostname = raw_input('Enter the host name: ')
     dnslup = dnslookup(hostname)
     dnslup.dns_resolver()
-    dnslup.reverse_lkp()
+    dnslup.reverse_lookup()
